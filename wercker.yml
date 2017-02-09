@@ -79,7 +79,7 @@ mysql:
         #cwd: all
         code: |
           apt-get update
-          apt-get install -y curl zip
+          apt-get install -y curl zip wget
           wget https://storage.googleapis.com/kubernetes-release/release/v1.5.1/bin/linux/amd64/kubectl
           apt-get install -y python-pip python-dev libxml2-dev libxslt1-dev zlib1g-dev
           apt-get install wget
