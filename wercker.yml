@@ -9,6 +9,13 @@ build:
         code: |
           apt-get update
           apt-get install -y curl zip
+          wget https://storage.googleapis.com/kubernetes-release/release/v1.5.1/bin/linux/amd64/kubectl
+          apt-get install -y python-pip python-dev libxml2-dev libxslt1-dev zlib1g-dev
+          pip install virtualenv
+          apt-get install -y npm nodejs-legacy
+          npm install -g jasmine-node
+          apt-get install -y junit
+          apt-get install -y bc
 
 dothis:
   box:
@@ -21,6 +28,13 @@ dothis:
         code: |
           apt-get update
           apt-get install -y curl zip
+          wget https://storage.googleapis.com/kubernetes-release/release/v1.5.1/bin/linux/amd64/kubectl
+          apt-get install -y python-pip python-dev libxml2-dev libxslt1-dev zlib1g-dev
+          pip install virtualenv
+          apt-get install -y npm nodejs-legacy
+          npm install -g jasmine-node
+          apt-get install -y junit
+          apt-get install -y bc
 
 dosomethingelse:
   box:
@@ -33,6 +47,13 @@ dosomethingelse:
         code: |
           apt-get update
           apt-get install -y curl zip
+          wget https://storage.googleapis.com/kubernetes-release/release/v1.5.1/bin/linux/amd64/kubectl
+          apt-get install -y python-pip python-dev libxml2-dev libxslt1-dev zlib1g-dev
+          pip install virtualenv
+          apt-get install -y npm nodejs-legacy
+          npm install -g jasmine-node
+          apt-get install -y junit
+          apt-get install -y bc
 
 mysql:
   box:
@@ -45,3 +66,10 @@ mysql:
         code: |
           apt-get update
           apt-get install -y curl zip
+          wget https://storage.googleapis.com/kubernetes-release/release/v1.5.1/bin/linux/amd64/kubectl
+          apt-get install -y python-pip python-dev libxml2-dev libxslt1-dev zlib1g-dev
+          pip install virtualenv
+          apt-get install -y npm nodejs-legacy
+          npm install -g jasmine-node
+          apt-get install -y junit
+          apt-get install -y bc
