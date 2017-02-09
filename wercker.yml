@@ -28,7 +28,7 @@ dosomethingelse:
 
   steps:
     - script:
-        name: Install gradle
+        name: Install curl
         #cwd: all
         code: |
           apt-get update
