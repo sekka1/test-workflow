@@ -12,7 +12,7 @@ build:
 
 dothis:
   box:
-    id: openjdk:8u111-jdk
+    id: redis:nanoserver
 
   steps:
     - script:
@@ -24,7 +24,19 @@ dothis:
 
 dosomethingelse:
   box:
-    id: openjdk:8u111-jdk
+    id: java:openjdk-8
+
+  steps:
+    - script:
+        name: Install curl
+        #cwd: all
+        code: |
+          apt-get update
+          apt-get install -y curl zip
+
+mysql:
+  box:
+    id: mysql:5.7
 
   steps:
     - script:
