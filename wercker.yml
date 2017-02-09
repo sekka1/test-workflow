@@ -1,0 +1,35 @@
+build:
+
+  box:
+    id: openjdk:8u111-jdk
+
+    steps:
+      - script:
+          name: do something
+          code: |
+            apt-get update
+            apt-get install -y curl zip
+
+dothis:
+  box:
+    id: openjdk:8u111-jdk
+
+  steps:
+    - script:
+        name: Install gradle
+        #cwd: all
+        code: |
+          apt-get update
+          apt-get install -y curl zip
+
+dosomethingelse:
+  box:
+    id: openjdk:8u111-jdk
+
+  steps:
+    - script:
+        name: Install gradle
+        #cwd: all
+        code: |
+          apt-get update
+          apt-get install -y curl zip
