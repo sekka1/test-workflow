@@ -3,12 +3,12 @@ build:
   box:
     id: openjdk:8u111-jdk
 
-    steps:
-      - script:
-          name: do something
-          code: |
-            apt-get update
-            apt-get install -y curl zip
+  steps:
+    - script:
+        name: do something
+        code: |
+          apt-get update
+          apt-get install -y curl zip
 
 dothis:
   box:
