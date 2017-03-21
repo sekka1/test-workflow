@@ -25,7 +25,7 @@ dothis:
 
   steps:
     - script:
-        name: Install gradle
+        name: Running stres
         #cwd: all
         code: |
           apt-get update
@@ -52,7 +52,7 @@ dosomethingelse:
 
   steps:
     - script:
-        name: Install curl
+        name: Running stres
         #cwd: all
         code: |
           apt-get update
@@ -79,7 +79,7 @@ mysql:
 
   steps:
     - script:
-        name: Install curl
+        name: Running stres
         #cwd: all
         code: |
           apt-get update
