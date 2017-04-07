@@ -30,7 +30,13 @@ dothis:
         code: |
           apt-get update
           apt-get install -y curl zip wget zlib1g-dev stress
-          stress -c 4 -m 5 --vm-bytes 3000M -d 1 --timeout 300s --verbose
+          #
+          # All around test
+          #stress -c 4 -m 5 --vm-bytes 3000M -d 1 --timeout 300s --verbose
+          #
+          # high memory test
+          stress -c 1 -m 1 --vm-bytes 8000M  --timeout 300s --verbose
+          #
           # wget https://storage.googleapis.com/kubernetes-release/release/v1.5.1/bin/linux/amd64/kubectl
           # apt-get install -y python-pip python-dev libxml2-dev libxslt1-dev zlib1g-dev
           # pip install virtualenv
